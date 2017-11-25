@@ -3,6 +3,8 @@ import json
 from Levenshtein import ratio, distance
 from gensim.models import Word2Vec
 
+print("MARCOS")
+
 def main():
     model = Word2Vec.load_word2vec_format('comments.bin', binary=True)
     badword_list = json.load(open('badword_list.json'))
@@ -36,3 +38,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+print("MARCOS")
